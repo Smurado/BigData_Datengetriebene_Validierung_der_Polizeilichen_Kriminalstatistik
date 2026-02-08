@@ -29,7 +29,16 @@ environment.yml              # Conda-Umgebung
    conda activate bigdata_project
    ```
 
-2. **Notebooks ausführen (in dieser Reihenfolge):**
+2. **Datenzugriff & API-Konfiguration**
+   Das Repository enthält im Ordner `data/raw` bereits initiale Daten für die PKS und die Heatmap. Für den vollständigen ETL-Prozess und die Zeitreihenanalyse müssen die Hauptdaten jedoch dynamisch nachgeladen werden.
+
+   Hierfür ist ein **API-Token** des Statistischen Bundesamtes erforderlich:
+   
+   - **Registrierung:** Erstellen Sie einen kostenlosen Account auf [Genesis-Online](https://www-genesis.destatis.de/datenbank/online#modal=login,register).
+   - **Token:** Nach der Anmeldung können Sie ein persönliches Token generieren.
+   - **Integration:** Fügen Sie die Zugangsdaten im Notebook 01_Datenaggregation_Vorverarbeitung.ipynb im initialen Setup von Spark ein, um den Download zu authentifizieren.
+
+3. **Notebooks ausführen (in dieser Reihenfolge):**
    - `01_Datenaggregation_Vorverarbeitung.ipynb` → lädt Destatis-Daten herunter und erzeugt .parquet Dateien
    - `01_Datenaggregation_Vorverarbeitung_PKS.ipynb` → verarbeitet PKS-Excel-Dateien
    - `02_Analysis_and_Plotting.ipynb` → erzeugt finale Plots
