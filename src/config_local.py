@@ -5,7 +5,6 @@ import sys
 def get_spark_session(app_name="CrimeAnalysis_Local"):
     print(f"Starting local Spark: {app_name}")
     
-    # Fix Python Pfade für venv
     os.environ['PYSPARK_PYTHON'] = sys.executable
     os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 
