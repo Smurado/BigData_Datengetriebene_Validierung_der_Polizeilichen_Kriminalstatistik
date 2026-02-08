@@ -17,9 +17,6 @@ spark-warehouse/
 metastore_db/
 derby.log
 
-# Generated outputs
-output/*.png
-
 # Data folders
 data/processed/*
 !data/processed/readme.md
