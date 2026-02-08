@@ -30,6 +30,7 @@ environment.yml              # Conda-Umgebung
    ```
 
 2. **Datenzugriff & API-Konfiguration**
+   
    Das Repository enthält im Ordner `data/raw` bereits initiale Daten für die PKS und die Heatmap. Für den vollständigen ETL-Prozess und die Zeitreihenanalyse müssen die Hauptdaten jedoch dynamisch nachgeladen werden.
 
    Hierfür ist ein **API-Token** des Statistischen Bundesamtes erforderlich:
