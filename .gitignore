@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Spark
+spark-warehouse/
+metastore_db/
+derby.log
+
+# Generated outputs
+output/*.png
+
+# Data folders
+data/processed/*
+!data/processed/readme.md
+
+# Raw data (ignore all except specific source files)
+data/raw/*
+!data/raw/bundeslaendergeo.json
+!data/raw/LA-F-01-T01-Laender-Faelle_xls.xlsx
+!data/raw/ZR-TV-04-T40-TV-insg-deutsch_xls.xlsx
+!data/raw/ZR-TV-07-T50-TV-insg-nichtdeutsch_xls.xlsx
+
+# Backup folders
+data/raw_backup/
+data/processed backup/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

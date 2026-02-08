@@ -1,0 +1,14 @@
+name: bigdata_project
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - openjdk=17
+  - pyspark
+  - pandas
+  - openpyxl
+  - matplotlib
+  - geopandas
+  - requests
+  - jupyter
+  - ipykernel
