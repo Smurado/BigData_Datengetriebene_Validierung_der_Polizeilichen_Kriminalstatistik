@@ -1,1 +1,1 @@
-Diese Datei dient als Platzhalter damit Github den Ordnern icht löscht.
+Diese Datei dient als Platzhalter damit Github den Ordner nicht löscht.
